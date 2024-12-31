@@ -40,7 +40,7 @@ The `Test` class is the primary interface for users to define and execute featur
     - Updates the status of each feature based on the test results.
     - Logs a detailed report for each feature, indicating whether all tests passed, some tests passed, or all tests failed.
 
-### Usage Example
+### Example
 
 ```csharp
 var testSuite = new Test("MyFeatureTests");
