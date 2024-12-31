@@ -28,6 +28,6 @@ jobs:
       - name: Publish
         run: >
           dotnet nuget push PackageUtils.${{ github.ref_name }}.nupkg
-          -s http://nuget.pkg.github/sifhg/index.json
+          -s https://nuget.pkg.github/sifhg/index.json
           -k ${{ secrets.REP_SECRET }}
         
