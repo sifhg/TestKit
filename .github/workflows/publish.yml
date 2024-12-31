@@ -29,7 +29,7 @@ jobs:
         
       - name: Publish
         run: >
-          dotnet nuget push PackageUtils.${{ github.ref_name }}.nupkg
+          dotnet nuget push TestKit.${{ github.ref_name }}.nupkg
           -s https://nuget.pkg.github.com/sifhg/index.json
           -k ${{ secrets.REP_SECRET }}
         
