@@ -32,4 +32,8 @@ jobs:
           dotnet nuget push TestKit.${{ github.ref_name }}.nupkg
           -s https://nuget.pkg.github.com/sifhg/index.json
           -k ${{ secrets.REP_SECRET }}
-        
+      - name: Publish to NuGet.org
+        run: >
+          dotnet nuget push TestKit.${{ github.ref_name }}.nupkg
+          -s https://api.nuget.org/v3/index.json
+          -k ${{ secrets.NUGET_API_KEY }}
