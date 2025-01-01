@@ -1,5 +1,7 @@
 # TestKit Documentation
 
+Link to NuGet: https://www.nuget.org/packages/TestKit
+
 ## Class: `Test`
 
 The `Test` class is the primary interface for users to define and execute feature tests on their code. It provides methods to specify features, add feature tests, and run these tests to evaluate the performance and correctness of the features.
