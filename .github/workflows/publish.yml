@@ -3,7 +3,7 @@ name: Build and Deploy
 on:
   push:
     tags:
-      - '*.*.*'
+      - "*.*.*"
 jobs:
   build:
     name: Build Package
@@ -15,7 +15,7 @@ jobs:
       - name: Set up .NET Core
         uses: actions/setup-dotnet@v2
         with:
-          dotnet-version: '9.0.x'
+          dotnet-version: "8.0.x"
 
       - name: Build
         run: dotnet build --configuration Release
@@ -23,10 +23,10 @@ jobs:
       - name: Package
         run: >
           dotnet pack --no-restore --no-build --configuration Release -p:PackageVersion=${{ github.ref_name }} --output .
-      
+
       - name: List files in the output directory
         run: ls -al
-        
+
       - name: Publish
         run: >
           dotnet nuget push TestKit.${{ github.ref_name }}.nupkg
