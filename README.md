@@ -2,6 +2,10 @@
 
 Link to NuGet: https://www.nuget.org/packages/TestKit
 
+## Description
+
+TestKit is a C# library for defining, management, execution, and analysing automated tests. It provides a framework for writing unit tests, ensuring that software applications function as expected across various scenarios.
+
 ## Class: `Test`
 
 The `Test` class is the primary interface for users to define and execute feature tests on their code. It provides methods to specify features, add feature tests, and run these tests to evaluate the performance and correctness of the features.
